@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f7f7f7, #eaeaea);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.carta {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+}
+
+.carta h1 {
+  color: #ff4da6;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.carta p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+button {
+  background: #ff4da6;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+  background: #ff2f91;
+  transform: scale(1.05);
+}
+
+/* === Personagem === */
+.personagem {
+  margin: 2rem auto 1rem auto;
+  width: 150px;
+  height: auto;
+}
+
+/* === Efeito confete === */
+.confetti {
+  position: fixed;
+  top: -10px;
+  width: 10px;
+  height: 10px;
+  background-color: #ff4da6;
+  opacity: 0.7;
+  animation: cair 3s linear forwards;
+  border-radius: 50%;
+}
+
+@keyframes cair {
+  to {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+/* === Elementos da autoescola === */
+.estrada {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  height: 80px;
+  background: repeating-linear-gradient(
+    to right,
+    #333,
+    #333 40px,
+    #444 40px,
+    #444 80px
+  );
+  border-radius: 10px;
+}
+
+.carrinho {
+  position: absolute;
+  bottom: 10px;
+  left: -80px;
+  width: 60px;
+  animation: dirigir 6s linear infinite;
+}
+
+@keyframes dirigir {
+  from { left: -80px; }
+  to { left: 110%; }
+}

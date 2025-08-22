@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sua CNH chegou!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-decor" aria-hidden="true">
+    <div class="road"></div>
+    <div class="cone c1"></div>
+    <div class="cone c2"></div>
+    <div class="cone c3"></div>
+    <div class="sign">AUTO ESCOLA</div>
+    <div class="semaforo" role="img" aria-label="Semáforo decorativo">
+      <span class="luz red"></span>
+      <span class="luz yellow"></span>
+      <span class="luz green"></span>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <header class="hero card">
+      <div class="left">
+        <h1>Parabéns Meu amor!<span class="blink"></span></h1>
+        <p>
+          Estou orgulhoso de você, me deixou muito feliz no momento em que soube, sempre acreditei em você, amor.🛣️💘
+        </p>
+        <div class="badges">
+          <span class="chip">CNH conquistada</span>
+          <span class="chip">100% aprovada</span>
+        </div>
+        <div class="cta">
+          <button id="confettiBtn" class="btn">Soltar confete 🎉</button>
+          <a class="btn ghost" href="#role">Aperte e leia →</a>
+        </div>
+      </div>
+
+      <div class="right">
+        <!-- Personagem: pele parda, cabelo cacheado, jeans, tênis preto, camiseta rosa pastel -->
+        <svg class="character" viewBox="0 0 240 300" xmlns="http://www.w3.org/2000/svg" aria-label="Personagem comemorando">
+          <!-- Pernas / calça jeans -->
+          <rect x="98" y="160" width="22" height="70" rx="6" class="jeans"/>
+          <rect x="122" y="160" width="22" height="70" rx="6" class="jeans"/>
+          <!-- Tênis pretos -->
+          <rect x="95" y="228" width="30" height="14" rx="6" class="tenis"/>
+          <rect x="121" y="228" width="30" height="14" rx="6" class="tenis"/>
+
+          <!-- Corpo / camiseta rosa pastel -->
+          <path d="M90,120 C90,105 115,98 122,98 C129,98 154,105 154,120 L154,160 L90,160 Z" class="camiseta"/>
+
+          <!-- Braços (celebrando) -->
+          <path d="M90,125 Q70,110 60,90" class="braco"/>
+          <circle cx="58" cy="88" r="7" class="pele"/>
+
+          <path d="M154,125 Q180,110 190,90" class="braco"/>
+          <circle cx="192" cy="88" r="7" class="pele"/>
+
+          <!-- Pescoço / cabeça pele parda -->
+          <rect x="118" y="98" width="10" height="10" rx="3" class="pele"/>
+          <circle cx="123" cy="85" r="18" class="pele"/>
+
+          <!-- Cabelo cacheado -->
+          <g class="cachos">
+            <circle cx="108" cy="72" r="8"/>
+            <circle cx="116" cy="64" r="9"/>
+            <circle cx="124" cy="60" r="10"/>
+            <circle cx="134" cy="62" r="9"/>
+            <circle cx="142" cy="70" r="8"/>
+            <circle cx="146" cy="80" r="9"/>
+            <circle cx="138" cy="86" r="8"/>
+            <circle cx="112" cy="86" r="8"/>
+          </g>
+
+          <!-- Sorriso -->
+          <path d="M116,90 q7,8 14,0" stroke="#592c28" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+    </header>
+
+    <section id="carta" class="card letter">
+      <h2>Uma carta para você</h2>
+      <p>
+        Amor, ver você conquistar a carteira de motorista me encheu de alegria.
+        tudo valeu a pena.
+        Que agora venha a de moto, né?. 💞
+      </p>
+      <p>
+        eu estou muito orgulhoso de você!
+      </p>
+      <div class="assinatura">Com carinho, <strong>Luan</strong>.</div>
+    </section>
+      <a class="btn big" href="#topo">Bora dirigir comigo? 💗</a>
+    </section>
+
+    <section class="card cnh">
+      <div class="licenca">
+        <div class="chip-lic"></div>
+        <div class="holo"></div>
+        <div class="dados">
+          <div>Condutora: <strong>Manu</strong></div>
+          <div>Status: <strong>Aprovada!</strong></div>
+          <div>Categoria: <strong>B</strong></div>
+        </div>
+      </div>
+      <div class="car" aria-hidden="true">
+        <div class="car-body
